@@ -1,0 +1,127 @@
+Year,Conference,Wins,Losses,Ties, Win_Percent, Simple_Rating_Score, Strength_of_schedule, Highest_rank, Coach, Bowl
+2017,Big Ten,12,1,0,.923,22.65,5.73,4,Paul Chryst,Orange Bowl
+2016,Big Ten,11,3,0,.786,15.30,5.30,5,Paul Chryst,Cotton Bowl-W
+2015,Big Ten,10,3,0,.769,10.85,1.39,19,Paul Chryst,Holiday Bowl-W
+2014,Big Ten,11,3,0,.786,12.70,1.91,11,Barry Alvarez,Outback Bowl-W
+2013,Big Ten,9,4,0,.692,14.20,2.28,14,Gary Andersen,Capital One Bowl-L
+2012,Big Ten,8,6,0,.571,9.77,2.91,12,Bret Bielema,Rose Bowl-L
+2011,Big Ten,11,3,0,.786,15.89,0.68,4,Bret Bielema,Rose Bowl-L
+2010,Big Ten,11,2,0,.846,14.02,0.64,4,Bret Bielema,Rose Bowl-L
+2009,Big Ten,10,3,0,.769,8.19,0.35,16,Bret Bielema,Champs Sports Bowl-W
+2008,Big Ten,7,6,0,.538,1.82,1.13,8,Bret Bielema,Champs Sports Bowl-L
+2007,Big Ten,9,4,0,.692,5.31,0.08,5,Bret Bielema,Outback Bowl-L
+2006,Big Ten,12,1,0,.923,11.97,-2.88,6,Bret Bielema,Capital One Bowl-W
+2005,Big Ten,10,3,0,.769,11.81,4.19,14,Barry Alvarez,Capital One Bowl-W
+2004,Big Ten,9,3,0,.750,8.69,2.35,4,Barry Alvarez,Outback Bowl-L
+2003,Big Ten,7,6,0,.538,6.44,4.21,14,Barry Alvarez,Music City Bowl-L
+2002,Big Ten,8,6,0,.571,8.55,4.77,19,Barry Alvarez,Alamo Bowl-W
+2001,Big Ten,5,7,0,.417,2.91,5.33,22,Barry Alvarez,No Bowl
+2000,Big Ten,9,4,0,.692,9.65,4.42,4,Barry Alvarez,Sun Bowl-W
+1999,Big Ten,10,2,0,.833,14.88,0.88,4,Barry Alvarez,Rose Bowl-W
+1998,Big Ten,11,1,0,.917,16.45,1.78,6,Barry Alvarez,Rose Bowl-W
+1997,Big Ten,8,5,0,.615,1.66,1.58,23,Barry Alvarez,Outback Bowl-L
+1996,Big Ten,8,5,0,.615,8.99,2.07,0,Barry Alvarez,Copper Bowl-W
+1995,Big Ten,4,5,2,.455,8.12,9.94,21,Barry Alvarez,No Bowl
+1994,Big Ten,7,4,1,.625,10.50,5.67,10,Barry Alvarez,Hall of Fame Bowl-W
+1993,Big Ten,10,1,1,.875,16.71,4.30,6,Barry Alvarez,Rose Bowl-W
+1992,Big Ten,5,6,0,.455,2.34,1.89,0,Barry Alvarez,No Bowl
+1991,Big Ten,5,6,0,.455,-2.86,-1.50,0,Barry Alvarez,No Bowl
+1990,Big Ten,1,10,0,.091,-6.73,6.00,0,Barry Alvarez,No Bowl
+1989,Big Ten,2,9,0,.182,-8.67,4.05,0,Don Morton,No Bowl
+1988,Big Ten,1,10,0,.091,-12.99,3.01,0,Don Morton,No Bowl
+1987,Big Ten,3,8,0,.273,-6.30,0.34,0,Don Morton,No Bowl
+1986,Big Ten,3,9,0,.250,-2.83,2.84,0,Jim Hilles,No Bowl
+1985,Big Ten,5,6,0,.455,1.65,3.19,0,Dave McClain,No Bowl
+1984,Big Ten,7,4,1,.625,5.14,1.89,20,Dave McClain,Hall of Fame Classic-L
+1983,Big Ten,7,4,0,.636,10.18,4.09,0,Dave McClain,No Bowl
+1982,Big Ten,7,5,0,.583,6.80,4.63,0,Dave McClain,Independence Bowl-W
+1981,Big Ten,7,5,0,.583,6.18,4.26,14,Dave McClain,Garden State Bowl-L
+1980,Big Ten,4,7,0,.364,1.20,6.84,0,Dave McClain,No Bowl
+1979,Big Ten,4,7,0,.364,1.99,6.90,0,Dave McClain,No Bowl
+1978,Big Ten,5,4,2,.545,3.64,3.92,0,Dave McClain,No Bowl
+1977,Big Ten,5,6,0,.455,1.49,3.77,14,John Jardine,No Bowl
+1976,Big Ten,5,6,0,.455,7.03,5.94,0,John Jardine,No Bowl
+1975,Big Ten,4,6,1,.409,0.05,5.78,0,John Jardine,No Bowl
+1974,Big Ten,7,4,0,.636,14.24,7.79,11,John Jardine,No Bowl
+1973,Big Ten,4,7,0,.364,8.43,11.43,0,John Jardine,No Bowl
+1972,Big Ten,4,7,0,.364,-1.26,4.47,0,John Jardine,No Bowl
+1971,Big Ten,4,6,1,.409,1.79,3.98,0,John Jardine,No Bowl
+1970,Big Ten,4,5,1,.450,9.09,8.89,0,John Jardine,No Bowl
+1969,Big Ten,3,7,0,.300,-3.80,7.50,0,John Coatta,No Bowl
+1968,Big Ten,0,10,0,.000,-9.45,7.45,0,John Coatta,No Bowl
+1967,Big Ten,0,9,1,.050,-7.81,3.49,0,John Coatta,No Bowl
+1966,Big Ten,3,6,1,.350,-5.41,3.89,0,Milt Bruhn,No Bowl
+1965,Big Ten,2,7,1,.250,-1.11,11.79,0,Milt Bruhn,No Bowl
+1964,Big Ten,3,6,0,.333,2.89,12.78,0,Milt Bruhn,No Bowl
+1963,Big Ten,5,4,0,.556,10.46,8.79,2,Milt Bruhn,No Bowl
+1962,Big Ten,8,2,0,.800,25.50,11.10,2,Milt Bruhn,Rose Bowl-L
+1961,Big Ten,6,3,0,.667,10.75,8.75,0,Milt Bruhn,No Bowl
+1960,Big Ten,4,5,0,.444,8.51,12.18,11,Milt Bruhn,No Bowl
+1959,Big Ten,7,3,0,.700,10.76,8.76,5,Milt Bruhn,Rose Bowl-L
+1958,Big Ten,7,1,1,.833,21.83,10.17,4,Milt Bruhn,No Bowl
+1957,Big Ten,6,3,0,.667,16.07,8.85,13,Milt Bruhn,No Bowl
+1956,Big Ten,1,5,3,.278,5.30,10.30,0,Milt Bruhn,No Bowl
+1955,Big Ten,4,5,0,.444,7.28,7.06,6,Ivy Williamson,No Bowl
+1954,Big Ten,7,2,0,.778,20.42,10.87,2,Ivy Williamson,No Bowl
+1953,Big Ten,6,2,1,.722,20.36,12.80,8,Ivy Williamson,No Bowl
+1952,Western,6,3,1,.650,16.75,9.15,1,Ivy Williamson,Rose Bowl-L
+1951,Western,7,1,1,.833,22.02,8.57,7,Ivy Williamson,No Bowl
+1950,Western,6,3,0,.667,15.99,10.65,15,Ivy Williamson,No Bowl
+1949,Western,5,3,1,.611,19.99,14.43,0,Ivy Williamson,No Bowl
+1948,Western,2,7,0,.222,2.87,10.20,0,Harry Stuhldreher,No Bowl
+1947,Western,5,3,1,.611,15.55,12.32,9,Harry Stuhldreher,No Bowl
+1946,Western,4,5,0,.444,8.62,9.62,15,Harry Stuhldreher,No Bowl
+1945,Western,3,4,2,.444,10.33,10.22,0,Harry Stuhldreher,No Bowl
+1944,Western,3,6,0,.333,7.70,13.48,19,Harry Stuhldreher,No Bowl
+1943,Western,1,9,0,.100,-1.65,15.75,0,Harry Stuhldreher,No Bowl
+1942,Western,8,1,1,.850,15.54,7.24,2,Harry Stuhldreher,No Bowl
+1941,Western,3,5,0,.375,5.57,11.20,0,Harry Stuhldreher,No Bowl
+1940,Western,4,4,0,.500,9.51,10.63,0,Harry Stuhldreher,No Bowl
+1939,Western,1,6,1,.188,-0.96,5.91,0,Harry Stuhldreher,No Bowl
+1938,Western,5,3,0,.625,9.42,7.54,12,Harry Stuhldreher,No Bowl
+1937,Western,4,3,1,.563,4.80,0.92,16,Harry Stuhldreher,No Bowl
+1936,Western,2,6,0,.250,-0.80,5.83,0,Harry Stuhldreher,No Bowl
+1935,Western,1,7,0,.125,-5.52,7.61,0,Clarence Spears,No Bowl
+1934,Western,4,4,0,.500,3.22,5.59,0,Clarence Spears,No Bowl
+1933,Western,2,5,1,.313,5.96,9.71,0,Clarence Spears,No Bowl
+1932,Western,6,1,1,.813,15.90,6.65,0,Clarence Spears,No Bowl
+1931,Western,5,4,1,.550,3.67,3.57,0,Glenn Thistlethwaite,No Bowl
+1930,Western,6,2,1,.722,15.68,3.02,0,Glenn Thistlethwaite,No Bowl
+1929,Western,4,5,0,.444,7.64,7.20,0,Glenn Thistlethwaite,No Bowl
+1928,Western,7,1,1,.833,14.83,3.83,0,Glenn Thistlethwaite,No Bowl
+1927,Western,4,4,0,.500,6.85,4.35,0,Glenn Thistlethwaite,No Bowl
+1926,Western,5,2,1,.688,10.19,4.32,0,George Little,No Bowl
+1925,Western,6,1,1,.813,13.17,5.05,0,George Little,No Bowl
+1924,Western,2,3,3,.438,3.01,5.26,0,Jack Ryan,No Bowl
+1923,Western,3,3,1,.500,7.89,3.89,0,Jack Ryan,No Bowl
+1922,Western,4,2,1,.643,9.86,1.57,0,J.R. Richards,No Bowl
+1921,Western,5,1,1,.786,16.01,0.87,0,J.R. Richards,No Bowl
+1920,Western,6,1,0,.857,15.19,3.48,0,J.R. Richards,No Bowl
+1919,Western,5,2,0,.714,11.14,5.57,0,J.R. Richards,No Bowl
+1918,Western,3,3,0,.500,4.46,3.96,0,Guy Lowman,No Bowl
+1917,Western,4,2,1,.643,18.91,11.91,0,J.R. Richards,No Bowl
+1916,Western,4,2,1,.643,7.45,0.45,0,Paul Withington,No Bowl
+1915,Western,4,3,0,.571,12.42,4.57,0,William Juneau,No Bowl
+1914,Western,4,2,1,.643,11.53,6.81,0,William Juneau,No Bowl
+1913,Western,3,3,1,.500,2.70,1.98,0,William Juneau,No Bowl
+1912,Western,7,0,0,1.000,23.83,4.54,0,William Juneau,No Bowl
+1911,Western,5,1,1,.786,14.93,1.79,0,J.R. Richards,No Bowl
+1910,Western,1,2,2,.400,-3.39,1.21,0,Tom Barry,No Bowl
+1909,Western,3,1,1,.700,6.72,3.72,0,Tom Barry,No Bowl
+1908,Western,5,1,0,.833,7.71,-1.63,0,Tom Barry,No Bowl
+1907,Western,3,1,1,.700,3.45,1.45,0,Charles Hutchins,No Bowl
+1906,Western,5,0,0,1.000,3.47,-9.53,0,Charles Hutchins,No Bowl
+1905,Western,8,2,0,.800,15.48,1.68,0,Phil King,No Bowl
+1904,Western,5,3,0,.625,12.73,4.61,0,Arthur Curtis,No Bowl
+1903,Western,6,3,1,.650,8.39,-1.81,0,Arthur Curtis,No Bowl
+1902,Western,6,3,0,.667,12.13,1.35,0,Phil King,No Bowl
+1901,Western,9,0,0,1.000,19.83,-2.17,0,Phil King,No Bowl
+1900,Western,8,1,0,.889,16.30,-0.92,0,Phil King,No Bowl
+1899,Western,9,2,0,.818,14.42,0.33,0,Phil King,No Bowl
+1898,Western,9,1,0,.900,12.77,-5.23,0,Phil King,No Bowl
+1897,Western,9,1,0,.900,9.71,-6.79,0,Phil King,No Bowl
+1896,Western,7,1,1,.833,10.13,-2.99,0,Phil King,No Bowl
+1895,Ind,5,2,1,.688,7.67,-0.70,0,H.O. Stickney,No Bowl
+1894,Ind,5,2,0,.714,11.14,-0.01,0,H.O. Stickney,No Bowl
+1893,Ind,4,2,0,.667,6.92,3.75,0,Parke Davis,No Bowl
+1892,Ind,4,3,0,.571,2.49,1.06,0,Frank Crawford,No Bowl

@@ -1,0 +1,5 @@
+db_name = 'haspiel_507projectfinal'
+db_user = 'JacobHaspiel'
+db_password = ''
+plotly_name = 'haspiel'
+plotly_key = 'VIjrswJzeBqwhVbe5tDE'
