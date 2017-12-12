@@ -1,10 +1,11 @@
 # SI507-FinalProject
 final project for SI507 UMSI 2017
+author Jacob Haspiel
+12/11/2017
 
-Hello! Outlined below is the 
+Hello! Outlined below is the documentation for my app using data from https://www.sports-reference.com/cfb/schools/
 
-Using data from https://www.sports-reference.com/cfb/schools/
-
+Project Goals:
 - [ ] Create Git Repository
 - [ ] Using BeautifulSoup - pull Data from sports-reference.com E.G. on football seasons for a given team
     - Coach
@@ -32,8 +33,8 @@ Using data from https://www.sports-reference.com/cfb/schools/
 
 
 
-
-*** Navigate to the git repository: SI507-FinalProject
+***INSTRUCTIONS***
+*** Once you have cloned this repository - navigate to the git repository: SI507-FinalProject
 
 1. Ensure your local host server is running with the following command: pg_ctl -D /usr/local/var/postgres start 
 
@@ -64,6 +65,10 @@ This app allows the user to pull and visualize data on their favorite (or most h
 	10. Creates a plotly html file visualizing data for the team or teams over all active years. Shows win totals and win %s.
 	11. Prompts user to run again or quit!
 
+
+TO TEST:
+1. Run the SI507F17_finalproject_tests file.
+2. Enjoy
 
 
 

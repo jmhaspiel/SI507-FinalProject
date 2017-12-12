@@ -72,7 +72,6 @@ def execute_and_print(query, number_of_results=100):
     results = cur.fetchall()
     for r in results[:number_of_results]:
         print(r)
-    # print('--> Result Rows:', len(results))
     print()
 
 def plotly_1(years_list, win_list, win_pct_list, teamname1):
@@ -89,10 +88,14 @@ def plotly_1(years_list, win_list, win_pct_list, teamname1):
 		mode = 'lines',
 		name='Single Season Win Total'
 		)
-	plotly.offline.plot({
+
+	data_layout = {
 	    "data": [percentage, wintotal],
 	    "layout": Layout(title="Football Seasons Summary for "+teamname1)
-		})
+		}
+	if __name__ == '__main__':	
+		plotly.offline.plot(data_layout)
+	return data_layout
 
 
 def plotly_2(years_list1, win_list1, win_pct_list1, years_list2, win_list2, win_pct_list2,teamname1, teamname2):
@@ -123,10 +126,12 @@ def plotly_2(years_list1, win_list1, win_pct_list1, years_list2, win_list2, win_
 		name=teamname2+' Single Season Win Total'
 		)
 
-	plotly.offline.plot({
-	    "data": [percentage_1, wintotal_1, percentage_2, wintotal_2],
+	data_layout = {"data": [percentage_1, wintotal_1, percentage_2, wintotal_2],
 	    "layout": Layout(title="Football Seasons Summary for "+teamname1 +" and "+teamname2)
-		})
+		}
+	if __name__ == '__main__':
+		plotly.offline.plot(data_layout)
+	return data_layout
 
 #class definitions
 class SeasonObject(object): #single season  class
@@ -210,7 +215,7 @@ class CoachObject(object):
 #Caching System
 # teamname = "wisconsin"
 
-def main_process(teamname):
+def main_process(teamname, test = False):
 	teamname = teamname
 	teamstripped = teamname.replace(" ","-")
 	lower_team = teamstripped.lower()
@@ -232,6 +237,7 @@ def main_process(teamname):
 	badger_seasons = badgersoup.find("span", {"id":teamlink})
 	badger_seasons_table = badgersoup.find("tbody")
 
+
 	#Lists for use
 	all_seasons_list = []
 	all_coaches_list = []
@@ -246,14 +252,13 @@ def main_process(teamname):
 					all_seasons_list.append(SeasonObject(row, lower_team))
 				except:
 					current = ""
+
 	except:
 		doorway = 'closed'
 		print("Could not find the name of "+teamname+ " check spelling and try again!")
-
-	#Compile all coaches 
+	
+		#Compile all coaches 
 	for season in all_seasons_list:
-		if season.__contains__(season.year) == True:
-			print (yes)
 		coach = season.coach
 		if season.coach == "no coach data available":
 			final_coach = season.coach
@@ -311,7 +316,7 @@ def main_process(teamname):
 	return years_list, win_pct_list, win_total_list
 
 
-def input_and_run():
+def input_and_run(question=None, teamnamex=None, teamnamey=None, number_coaches1=None, number_coaches2=None):
 	print("Welcome to the football index. Take a look at one team to view their wins and win percent over time. Choose 2 teams to compare them!")
 	question = "1"
 	question = input("Look at 1 FBS/FCS Football team or 2?: (1/2):    ")
@@ -320,25 +325,33 @@ def input_and_run():
 	team1_years = []
 	number_coaches2 = 0
 	if question == "1":
-		teamnamex = input('Enter an FBS or FCS College Football School Such as: Wisconsin, Michigan , Michigan State:  ')
+		if not teamnamex:
+			teamnamex = input('Enter an FBS or FCS College Football School Such as: Wisconsin, Michigan , Michigan State:  ')
+
 		try:
-			number_coaches1 = int(input("For "+teamnamex +" How many coaches do you want to see data for? (e.g. 5):    "))
+			if not number_coaches1:
+				number_coaches1 = int(input("For "+teamnamex +" How many coaches do you want to see data for? (e.g. 5):    "))
 		except:
 			number_coaches1 = 10
 		teamname1 = teamnamex.lower()
 		print("")
 		team1_years, team1_win_pct, team1_win_list = (main_process(teamname1))
 	elif question == "2":
-		teamnamex = input('Enter Team 1: FBS or FCS College Football School Such as: Wisconsin, Michigan , Michigan State:  ')
-		teamnamey = input('Enter Team 2:   ')
+		if not teamnamex:
+			teamnamex = input('Enter Team 1: FBS or FCS College Football School Such as: Wisconsin, Michigan , Michigan State:  ')
+			teamnamey = input('Enter Team 2:   ')
 		try:
-			number_coaches1 = int(input("For "+teamnamex +" How many coaches do you want to see data for? (e.g 5):    "))
+			if not number_coaches1:
+				number_coaches1 = int(input("For "+teamnamex +" How many coaches do you want to see data for? (e.g 5):    "))
 		except:
 			number_coaches1 = 10
+
 		try:
-			number_coaches2 = int(input("For "+teamnamey +" How many coaches do you want to see data for? (e.g. 5):    "))
+			if not number_coaches2:
+				number_coaches2 = int(input("For "+teamnamey +" How many coaches do you want to see data for? (e.g. 5):    "))
 		except:
 			number_coaches2 = 10
+		
 		teamname1 = teamnamex.lower()
 		teamname2 = teamnamey.lower()
 		team2_years, team2_win_pct, team2_win_list = (main_process(teamname2))
@@ -352,12 +365,12 @@ def input_and_run():
 		if teamname2 != "":	
 			return teamname1, teamname2, number_coaches1, number_coaches2
 		else:
-			return teamname1, teamname1, number_coaches1, number_coaches2
+			return teamname1, teamname1, number_coaches1, number_coaches1
 
 
-def final_function():
+def final_function(**kwargs):
 	try:
-		teamname1, teamname2, number_coaches1, number_coaches2 = input_and_run()
+		teamname1, teamname2, number_coaches1, number_coaches2 = input_and_run(**kwargs)
 		teamstr1 = "'%"+teamname1+"'"
 		teamstr2 = "'%"+teamname2+"'"
 		if teamname1 == teamname2:	
@@ -382,13 +395,16 @@ def final_function():
 		print('Could not complete request')
 
 conn, cur = get_connection_and_cursor()
-rewrite = 'Y'
-rewrite = input("Initialize / Re-Write the DB? Careful, cannot be undone! enter 'Y' for yes, any other key for No:    ")
-if rewrite == 'Y':
-	setup_database()
-go_again = 'Y'
-while go_again != 'q':
-	final_function()
-	go_again = input('Type "q" to quit, or hit any other key to run the program again:    ')
+
+if __name__ == '__main__':
+	# if test == False:
+	rewrite = 'Y'
+	rewrite = input("Initialize / Re-Write the DB? Careful, cannot be undone! enter 'Y' for yes, any other key for No:    ")
+	if rewrite == 'Y':
+		setup_database()
+	go_again = 'Y'
+	while go_again != 'q':
+		final_function()
+		go_again = input('Type "q" to quit, or hit any other key to run the program again:    ')
 
 
