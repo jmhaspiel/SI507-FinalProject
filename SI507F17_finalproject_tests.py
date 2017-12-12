@@ -25,8 +25,6 @@ class TestFinalProject(unittest.TestCase):
 		self.badgersoup = BeautifulSoup(self.badger_data, 'html.parser')
 		self.badger_seasons_table = self.badgersoup.find("tbody")
 
-		# self.testrow ='<tr><th class="right " csk="107" data-stat="ranker" scope="row">107</th><td class="right " data-stat="year_id"><a href="/cfb/schools/wisconsin/1911.html">1911</a></td><td class="left " data-stat="conf_id"><a href="/cfb/conferences/western/1911.html">Western</a></td><td class="right " data-stat="wins">5</td><td class="right " data-stat="losses">1</td><td class="right " data-stat="ties">1</td><td class="right " data-stat="win_loss_pct">.786</td><td class="right " data-stat="srs">14.93</td><td class="right " data-stat="sos">1.79</td><td class="center " csk="999.1911" data-stat="rank_pre"></td><td class="center " csk="999.1911" data-stat="rank_min"></td><td class="center " csk="999.1911" data-stat="rank_final"></td><td class="left " csk="Richards,J.R..1911" data-stat="coaches"><a href="/cfb/coaches/jr-richards-1.html">J.R. Richards</a> (5-1-1)</td><td class="left " csk="ZZZ.1911" data-stat="bowl_name"></td><td class="left " data-stat="notes"></td></tr>'
-		# final_function(question="1", teamnamex="Wisconsin", teamnamey="Michigan", number_coaches1=1, number_coaches2=1)
 		self.testlist = []
 		for season in self.badger_seasons_table:
 			self.testlist.append(SeasonObject(season,'wisconsin'))
@@ -63,12 +61,8 @@ class TestFinalProject(unittest.TestCase):
 	def test_coach_class_init(self):
 		self.assertTrue(self.testcoach.coachname =='Jacob Haspiel')
 		self.assertTrue(self.testcoach.school =='wisconsin')
-
-
-	# def test_cache_diction(self):
-	# 	self.assertTrue(type(self.cache)==dict)
-
-
+		
+	def ADD REPR
 
 class TestPlotting(unittest.TestCase):
 	def setUp(self):
@@ -82,6 +76,7 @@ class TestPlotting(unittest.TestCase):
 		self.testwinpctlist2 = [.25,.31,.29]
 		self.plotly1= plotly_1(self.testyearslist1, self.testwinlist1,self.testwinpctlist1,self.testteamname1)
 		self.plotly2= plotly_2(self.testyearslist1, self.testwinlist1,self.testwinpctlist1,self.testyearslist2, self.testwinlist2,self.testwinpctlist2,self.testteamname1,self.testteamname2)
+	
 	
 
 	def test_plotly1_type(self):
