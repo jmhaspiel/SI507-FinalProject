@@ -2,6 +2,7 @@
 final project for SI507 UMSI 2017
 author Jacob Haspiel
 12/11/2017
+VERSION == PYTHON 3.6
 
 Hello! Outlined below is the documentation for my app using data from https://www.sports-reference.com/cfb/schools/
 
@@ -34,6 +35,8 @@ Project Goals:
 
 
 ***INSTRUCTIONS***
+VERSION == PYTHON 3.6
+
 *** Once you have cloned this repository - navigate to the git repository: SI507-FinalProject
 
 1. Ensure your local host server is running with the following command: pg_ctl -D /usr/local/var/postgres start 

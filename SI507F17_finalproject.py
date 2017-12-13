@@ -20,7 +20,7 @@ except:
     CACHE_DICTION = {}
 
 # function definitions
-def get_connection_and_cursor(): # NOTE - Code taken from section 11 in class assignment
+def get_connection_and_cursor(): # NOTE - Code adapted from section 11 in class assignment
     try:
         if db_password != "":
             db_connection = psycopg2.connect("dbname='{0}' user='{1}' password='{2}'".format(db_name, db_user, db_password))
@@ -70,8 +70,8 @@ def setup_database():
 def execute_and_print(query, number_of_results=100):
     cur.execute(query)
     results = cur.fetchall()
-    for r in results[:number_of_results]:
-        print(r)
+    for q in results[:number_of_results]:
+        print(q)
     print()
 
 def plotly_1(years_list, win_list, win_pct_list, teamname1):
