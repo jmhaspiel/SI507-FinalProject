@@ -208,8 +208,17 @@ class CoachObject(object):
 		max_year = max(years_list_coached)
 		min_year = min(years_list_coached)
 		years_coached_final = str(min_year)+"-"+str(max_year)
+
+	def __repr__(self):
+		return "Coach: {}, for School: {} ".format(self.coachname, self.school)
 	
 		return years_coached_final
+
+	def __contains__(self,school):
+		if school in self.school:
+			return True
+		else:
+			return False
 
 
 #Caching System

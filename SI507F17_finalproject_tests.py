@@ -21,14 +21,6 @@ class TestFinalProject(unittest.TestCase):
 		except:
 			self.verifier = "no"
 
-		self.badger_data  = requests.get('https://www.sports-reference.com/cfb/schools/wisconsin/').text
-		self.badgersoup = BeautifulSoup(self.badger_data, 'html.parser')
-		self.badger_seasons_table = self.badgersoup.find("tbody")
-
-		self.testlist = []
-		for season in self.badger_seasons_table:
-			self.testlist.append(SeasonObject(season,'wisconsin'))
-
 		self.wisco_years, self.wisco_win_pct,self.wisco_win_total = main_process('wisconsin')
 		
 		self.query = "SELECT Coaches.Name, Coaches.season_count, Coaches.years_active, Coaches.overall_record from Coaches WHERE coaches.school LIKE '%wisconsin%'"
@@ -61,8 +53,12 @@ class TestFinalProject(unittest.TestCase):
 	def test_coach_class_init(self):
 		self.assertTrue(self.testcoach.coachname =='Jacob Haspiel')
 		self.assertTrue(self.testcoach.school =='wisconsin')
-		
-	def ADD REPR
+
+	def test_coach_repr(self):
+		self.assertTrue(self.testcoach.__repr__() == 'Coach: Jacob Haspiel, for School: wisconsin ')
+
+	def test_coach_contains(self):
+		self.assertTrue(self.testcoach.__contains__('wisconsin'))
 
 class TestPlotting(unittest.TestCase):
 	def setUp(self):
@@ -84,7 +80,6 @@ class TestPlotting(unittest.TestCase):
 	def test_plotly1_wins(self):
 		self.assertEqual(len(self.plotly1['data']),2)
 	def test_plotly1_title(self):
-		print(self.plotly1['layout']['title'])
 		self.assertTrue(self.testteamname1 in self.plotly1['layout']['title'])
 
 	def test_plotly2_type(self):
@@ -93,9 +88,6 @@ class TestPlotting(unittest.TestCase):
 		self.assertEqual(len(self.plotly2['data']),4)
 	def test_plotly2_title(self):
 		self.assertTrue(self.testteamname1, self.testteamname2 in self.plotly2['layout']['title'])
-
-	
-# \
 
 
 unittest.main(verbosity=2)
